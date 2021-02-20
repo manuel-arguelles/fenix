@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: |
           source env/setenv.sh config config-template.conf
-          INSTALL_TYPE_RAW=yes COMPRESS_IMAGE=yes make
+          COMPRESS_IMAGE=yes make
      
      # Upload to GH Actions Artifacts
      #${{ github.workspace }}/build/images/*.img.xz
